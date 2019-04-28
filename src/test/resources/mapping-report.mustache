@@ -1,19 +1,21 @@
 <html>
 <body>
 <h3>VDI Title Fragment mapping status</h3>
-<table border="1">
+<table border="2" style="border-collapse: collapse;">
     <thead>
-    <tr>
-        <td>Rule</td>
-        <td>Description</td>
-        <td>Status</td>
-        <td>message</td>
+    <tr style="text-align: center">
+        <td><b>Method</b></td>
+        <td><b>Rule</b></td>
+        <td><b>Description</b></td>
+        <td><b>Status</b></td>
+        <td><b>Message</b></td>
     </tr>
     </thead>
     <tbody>
     {{#VdiTitle}}
         <tr>
-            <td>{{rule}}</td>
+            <td width="100px">{{type}}</td>
+            <td width="100px">{{rule}}</td>
             <td>{{desc}}</td>
             <td>{{status}}</td>
             <td>{{message}}</td>
@@ -21,5 +23,30 @@
     {{/VdiTitle}}
     </tbody>
 </table>
+
+<h3>LDI Scheduled Airing Fragment mapping status</h3>
+<table border="2" style="border-collapse: collapse;">
+    <thead>
+    <tr style="text-align: center">
+        <td><b>Method</b></td>
+        <td><b>Rule</b></td>
+        <td><b>Description</b></td>
+        <td><b>Status</b></td>
+        <td><b>Message</b></td>
+    </tr>
+    </thead>
+    <tbody>
+    {{#LdiScheduledAiring}}
+        <tr>
+            <td width="100px">{{type}}</td>
+            <td width="100px">{{rule}}</td>
+            <td>{{desc}}</td>
+            <td>{{status}}</td>
+            <td>{{message}}</td>
+        </tr>
+    {{/LdiScheduledAiring}}
+    </tbody>
+</table>
+
 </body>
 </html>
